@@ -1,28 +1,33 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>starter code</title>
-<link rel="stylesheet" type="text/css" href="site.css">
-</head>
-
-<body>
-<h1>Letter Reverser</h1>
-<div id = "colorbar">
-    <h2 id= "words"></h2>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<div id ="outsideH">
+  <div id ="centerH">
+  <h1 id = "title"> Letter Reverser </h1>
+  </div>
+  <div id= "centerH2"> 
+  <h1 id="replaymsg"> Catch the button to play again!</h1>
+  </div>
+</div>
+<div class="colorBlock" id ="grad">
+ <ul id="demo"></ul>
+<p id="demo2"></p>
 </div>
 
-
-
-<button type="button" id="button1">Button</button>
-<div>
-    <br />
-    <input type="text" val="starting value" text="hello" id="textbox1" />
-    <br />
+<div class ="container">
+  <div id = "innercontain">
+<button onclick="addWords()" type="button" id="button1">Add Words</button>
 </div>
-
-<script src="main.js"></script>
-</body>
-
+<div id = "innercontain2">
+<button onclick = "reverseWords();colorChange();" type ="button" id = "button2" >Reverse </button>
+</div>
+</div>
+<div class = "reloadbttn" id="movinbttn">
+  <div class ="centerRbttn"> 
+<button id="reload"onclick ="location.reload()">Play Again</button>
+</div>
+</div>
+<script src="script.js"></script>
+  </body>
 </html>
