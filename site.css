@@ -1,0 +1,116 @@
+body {
+    margin: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 150%;
+}
+#title{
+  font-family: 'Segoe UI';
+}
+
+#centerH {
+padding-left: 50.5pc;
+width: 100px;  
+height: 100px;   
+justify-content: center;   
+text-align: center;
+vertical-align: middle;
+display: table-cell;
+}
+#centerH2 {
+padding-left: .1pc;
+padding-right: 115pc;
+width: 100px;  
+height: 100px;   
+justify-content: center;   
+text-align: center;
+vertical-align: middle;
+display: table-cell;
+}
+.container {  
+position: absolute; 
+  display: table; 
+}
+#innercontain{
+padding-left: 54.5pc;
+width: 100px;  
+height: 100px;   
+justify-content: center;   
+text-align: center;
+vertical-align: middle;
+display: table-cell;
+}
+#innercontain2{
+padding-left: .1pc;
+padding-right: 115pc;
+width: 100px;  
+height: 100px;   
+justify-content: center;   
+text-align: center;
+vertical-align: middle;
+display: table-cell;
+}
+
+
+#button2 {  
+background-color:orange;   
+font-size: 25px;
+
+}  
+#button1{
+  background-color:orange;
+}
+.centerRbttn {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.reloadbttn{
+  width: 2px;
+  height: 2px;
+  background-color: red;
+  position: relative;
+  animation-name: movinbutt;
+  animation-duration: 4.2s;
+  animation-iteration-count: 100;
+  animation-direction: alternate-reverse;  
+  padding: 10%;
+}
+
+@keyframes movinbutt {
+  0%   {background-color:red; left:0px; top:700px;}
+  25%  {background-color:orange; left:500px; top:700px;}
+  50%  {background-color:yellow; left:100px; top:800px;}
+  75%  {background-color:green; left:0px; top:400px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.colorBlock {
+  border: 5px outset  white;
+  background-image: linear-gradient(to right, red , yellow);  
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 6pc;
+}
+.colorBlock2 {
+  border: 5px outset  white;
+  background-image: linear-gradient(to right, yellow , green); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1pc;
+  text-align: left;
+
+ /*@media screen and (max-width: 500px){ 
+  #button1{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 10;
+    padding: 14px;
+  }
+} 
+
+How do I center the button when the web page is smaller? 
+*/
